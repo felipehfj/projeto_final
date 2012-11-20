@@ -314,8 +314,8 @@ void imprimeDataHora(){
 }
 
 void atualizaIP(){
-  /*
-0: nothing happened
+ /*
+   0: nothing happened
    1: renew failed
    2: renew success
    3: rebind fail
