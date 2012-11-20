@@ -1,7 +1,7 @@
 import socket
 from datetime import datetime
 
-#"DDHHMMSS.JPGPP"
+#"DDHHMMSS.JPGPP" #
 
 ENDERECO = ''   #Endereco do servidor
 PORTA = 2000    #Porta do servidor
