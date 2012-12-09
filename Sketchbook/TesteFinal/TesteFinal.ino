@@ -49,10 +49,10 @@ Adafruit_VC0706 cam = Adafruit_VC0706(&Serial1);
 // Fim Camera
 
 // Ajuste LDR
-#define AJLDRE 550
-#define AJLDRD 550
-#define AJLDRI 550
-#define AJLDRP 550
+#define AJLDRE 200
+#define AJLDRD 200
+#define AJLDRI 200
+#define AJLDRP 200
 //
 
 //Ponto
@@ -132,7 +132,6 @@ void loop(){
   atualizaIP();
   atualizaLdr();
   atualizaIgnoraParada();
-  imprimeDataHora();
 
   if(ldrEsquerda > AJLDRE){
     ePontoParada();
@@ -191,7 +190,7 @@ void conectaServidor(){
 
       imgFile.close();
       cam.resumeVideo();
-      Serial.println("Aramzenado");
+      Serial.println("Armazenado");
 
       uint16_t temp;
       File imagem = SD.open(nome); // Abre o arquivo de imagem a ser enviado
